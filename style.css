@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Nato", sans-serif;
+}
+body{
+    background: #f2f2f2;
+}
+.main{
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+.apresentation{
+    width: 50%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.apresentation div:first-child{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.apresentation div:first-child h1:first-child{
+    font-weight: 200;
+}
+.apresentation p{
+    padding: 10px;
+    color: #5a5a5a;
+}
+
+.ContainerCards{
+    display: flex;
+    gap: 10px;
+}
+.Cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.card{
+    width: 300px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #ccc;
+    transition: all ease-in .2s;
+}
+.card p{
+    color: #5a5a5a;
+}
+.card a{
+    color: #222222;
+}
+.icon{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    font-size: 25px;
+}
+.js{
+    border-top: 5px solid #af9500;
+}
+.js h3{
+    border-bottom: 1px solid #af9500;
+    padding: 5px 0;
+    margin-bottom: 5px;
+}
+.react{
+    border-top: 5px solid #004dc0;
+}
+.react h3{
+    border-bottom: 1px solid #004dc0;
+    padding: 5px 0;
+    margin-bottom: 5px;
+}
+.node{
+    border-top: 5px solid #14af00;
+}
+.node h3{
+    border-bottom: 1px solid #14af00;
+    padding: 5px 0;
+    margin-bottom: 5px;
+}
+.bootstrap{
+    border-top: 5px solid #af009b;
+}
+.bootstrap h3{
+    border-bottom: 1px solid #af009b;
+    padding: 5px 0;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 962px) {
+    .main{
+        height: 100%;
+        background: #f2f2f2;
+    }
+    .apresentation div:first-child h1{
+        font-size: 18px;
+    }
+    .apresentation p{
+        font-size: 14px;
+    }
+    .ContainerCards{
+        flex-direction: column;
+    }
+}
